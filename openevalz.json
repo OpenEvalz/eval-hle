@@ -1,0 +1,55 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "hle",
+    "slug": "hle",
+    "title": "Humanity's Last Exam",
+    "group": "Knowledge",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/hle",
+    "inspect_ai": "0.3.260",
+    "eval_version": "5-C",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": true,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "hle",
+      "samples": 2500
+    }
+  ],
+  "total_samples": 2500,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "cais/hle",
+      "state": "pinned"
+    },
+    {
+      "type": "huggingface",
+      "source": "skylenage-ai/HLE-Verified",
+      "state": "pinned"
+    },
+    {
+      "type": "huggingface",
+      "source": "cais/hle-rolling",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
